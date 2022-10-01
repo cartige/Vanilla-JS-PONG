@@ -1,0 +1,108 @@
+:root{
+    --mainBgColor: black;
+    --playerBarColor: white;
+    --textScoreColor: white;
+    --ballColor: white;
+    --playersBarWidth: 0.7vw;
+    --playersBarHeight: 15vh;
+}
+
+body{
+    background-color: var(--mainBgColor);
+    height: fit-content;
+    overflow: hidden;
+    margin: 0;
+}
+
+h2{
+    color:var(--textScoreColor);
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* #score{
+    width: 15vw;
+    height: 10vh;
+    border-style: solid;
+    border-color: var(--textScoreColor);
+    color: var(--textScoreColor);
+    border-width: 0.1rem;
+    position: absolute;
+    left: 41vw;
+    top: 41vh;
+    padding: 0;
+    
+} */
+
+#player1{
+    width: var(--playersBarWidth);
+    height: var(--playersBarHeight);
+    max-width: var(--playersBarWidth);
+    border-style: solid;
+    background-color: var(--playerBarColor);
+    border-width: 0.1rem;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+#player2{
+    width: var(--playersBarWidth);
+    height: var(--playersBarHeight);
+    max-width: var(--playersBarWidth);
+    border-style: solid;
+    background-color: var(--playerBarColor);
+    border-width: 0.1rem;
+    position: absolute;
+    left: 98.5vw;
+    margin: 0;
+    padding: 0;
+}
+
+#ball{
+    width: 2.7vh;
+    height: 2.7vh;
+    position: absolute;
+    left: 30vw;
+
+}
+
+.red-color{
+    background-color: red;
+}
+
+.white-color{
+    background-color: var(--ballColor);
+}
+
+.scoreBoard{
+    width: 15vw;
+    height: 10vh;
+    max-width: fit-content;
+    color: var(--textScoreColor);
+    /* border-width: 0.1rem; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 45vw;
+    top: 41vh;
+    padding: 0;
+}
+
+.player-bar-style{
+    width: var(--playersBarWidth);
+    height: var(--playersBarHeight);
+    max-width: var(--playersBarWidth);
+    border-style: solid;
+    background-color: var(--playerBarColor);
+    border-width: 0.1rem;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.reset-margin-padding{
+    margin: 0;
+    padding: 0;
+}
