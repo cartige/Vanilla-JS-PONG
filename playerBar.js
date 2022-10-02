@@ -4,7 +4,7 @@ class Bar{
         this._height = height;
         this._positionX = positionX;
         this._positionY = positionY;
-        this._barSpeed = 2;
+        this._barSpeed = 6;
     }
 
     get width(){

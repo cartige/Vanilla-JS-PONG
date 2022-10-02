@@ -10,12 +10,12 @@ class View{
         // this.vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
         // this.vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
-        this._mainGame.style.width = `${game.maxWidth}vw`;
-        this._mainGame.style.height = `${game.maxHeight}vh`;
+        this._mainGame.style.width = '100vw';
+        this._mainGame.style.height = '100vh';
         this._mainGame.classList.add('reset-margin-padding')
 
-        this.ball.style.width = `${game.ball.size}vw`;
-        this.ball.style.height = `${game.ball.size}vh`;
+        this.ball.style.width = `${(game.ball.size*100)/game.maxWidth}vw`;
+        this.ball.style.height = `${(game.ball.size*100)/game.maxHeight}vh`;
         this.ball.style.position = 'absolute';
         this.ball.style.backgroundColor = 'white';
         // this.playerBar1.width = `${game.playerBar1.width}vw`;
@@ -46,7 +46,7 @@ class View{
         this.playerBar1.style.top = `${(game.playerBar1.positionY*100)/game.maxHeight}vh`;
         this.playerBar1.style.left = `${(game.playerBar1.positionX*100)/game.maxWidth}vw`;
         this.playerBar2.style.top = `${(game.playerBar2.positionY*100)/game.maxHeight}vh`;
-        this.playerBar2.style.left = `${game.playerBar2.positionX}vw`;
+        this.playerBar2.style.left = `${(game.playerBar2.positionX*100)/game.maxWidth}vw`;
 
         this.score.innerHTML = `${game.scoreP1} : ${game.scoreP2}`;
         // console.log(`${this.vh} vh`);
