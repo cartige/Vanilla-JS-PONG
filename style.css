@@ -5,6 +5,8 @@
     --ballColor: white;
     --playersBarWidth: 0.7vw;
     --playersBarHeight: 15vh;
+    --scoreBoardWidth : 15vw;
+    --scoreBoardHeight : 10vh;
 }
 
 body{
@@ -19,20 +21,6 @@ h2{
     text-align: center;
     font-size: 2rem;
 }
-
-/* #score{
-    width: 15vw;
-    height: 10vh;
-    border-style: solid;
-    border-color: var(--textScoreColor);
-    color: var(--textScoreColor);
-    border-width: 0.1rem;
-    position: absolute;
-    left: 41vw;
-    top: 41vh;
-    padding: 0;
-    
-} */
 
 #player1{
     width: var(--playersBarWidth);
@@ -64,7 +52,6 @@ h2{
     height: 2.7vh;
     position: absolute;
     left: 30vw;
-
 }
 
 .red-color{
@@ -76,18 +63,17 @@ h2{
 }
 
 .scoreBoard{
-    width: 15vw;
-    height: 10vh;
     max-width: fit-content;
     color: var(--textScoreColor);
     /* border-width: 0.1rem; */
     position: absolute;
+    top: 49vh;
+    left: 46vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 45vw;
-    top: 41vh;
-    padding: 0;
+    margin: 0 auto;
+    visibility: hidden;
 }
 
 .player-bar-style{
@@ -98,11 +84,34 @@ h2{
     background-color: var(--playerBarColor);
     border-width: 0.1rem;
     position: absolute;
-    margin: 0;
-    padding: 0;
 }
 
 .reset-margin-padding{
     margin: 0;
     padding: 0;
+}
+
+.relative-help{
+    position: relative;
+}
+
+.multi-menu{
+    position: absolute;
+    left: 32vw;
+    top: 40vh;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    border: solid 1vmin var(--textScoreColor);
+    border-radius: 10%;
+    background-color: black;
+}
+
+.multi-menu h2{
+    width: 30vw;
+    cursor: pointer;
+}
+
+.multi-menu h2:hover{
+    text-shadow: 2px 2px 5px white, 0 0 0.5em white, 0 0 0.5em white;
 }
